@@ -3,6 +3,15 @@ After I've learned the theory behind the computer vision subfield, I moved to th
 
 Additional topics that I learned were RNN, LSTM, GRU, and Transformers.
 
+# Data
+I set up an Intents.json file that defines certain intentions that could occur during the interactions with the chatbot (Predefined patterns and responses).
+The Intents.json structure is as follows:
+* Tags: A set of tags (or labels) that user's queries may fall into.
+* Patterns: A set of patterns that define the different ways of how a user may ask the question.
+* Responses: A set of static responses that the chatbot will randomly choose one of them and return when posed with a query.
+
+The chatbot will take these patterns and use them as training data to determine how it looks when the chatbot is being asked for its name (For instance), so that it could adapt to the different ways the user may ask to know the chatbot's name. Hence, the user will not have to use the exact queries that the chatbot has learnt on.
+
 # Performance
 Unlike the computer vision project, here there is not much data to train the neural network on, so I was able to train the neural network along a lot of epochs without any computational restrictions.
 
